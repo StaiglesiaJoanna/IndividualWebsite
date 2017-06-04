@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> FASHION. FOOD. TRAVEL. </title>
+<style>
+body {
+    background-color: #FFF8DC;
+}
+.mySlides {display:none;
+    height: 600px;
+margin-top: -100px;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #7FFFD4;
+    color: black;
+}
+.topnav a.active {
+    color: white;
+	width: 200px ;
+}
+h2 {
+color: #45B39D;
+font-family: Copperplate Gothic Light, sans-serif;
+font-size: 25px; 
+line-height: 160px; 
+font-weight: normal; 
+margin-bottom: 0px; 
+margin-top: -35px; 
+text-align: center; 
+text-shadow: 0 1px 1px #fff;
+}
+body {
+    background-image: url("fav.PNG");
+	background-size: cover;
+}
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+float: right ;
+margin-top: -40px;
+margin-right: 100px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+float: right ;
+margin-top: -40px;
+margin-right: 50px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+float: right;
+margin-top: -40px;
+}
+</style>
+</head>
+<body>
+<body background="back.jpg">
+<header style="margin-top: 0px";>
+<center><img src="d.PNG" width="300px" height="40px" alt"fashion"></center>
+<table height="100px">
+ <div class="topnav">
+  <a class="active" href="#HOME">HOME</a>
+  <a class="active" href="fashion.html">FASHION</a>
+  <a class="active" href="food.html">FOOD</a>
+  <a class="active" href="travel.html">TRAVEL</a>
+  <a class="active" href="blog.html">BLOG</a>
+  <a class="active" href="about.html">ABOUT</a>
+  <a class="active" href="contact.html">CONTACT US</a>
+</div>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/joannastaiglesia.18" class="fa fa-facebook"></a>
+<a href="https://twitter.com/@thejoannaaa" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/_joannastaiglesia/" class="fa fa-instagram"></a>
+<div style="padding-left:16px">
+</div>
+</table>
+<center><div class="w3-content w3-section" style="max-width:1500px">
+  <img class="mySlides" src="all.PNG" style="width:100%">
+  <img class="mySlides" src="trfafo.PNG" style="width:100%">
+  <img class="mySlides" src="trfa.PNG" style="width:100%">
+<img class="mySlides" src="tr.JPG" style="width:100%">
+<img class="mySlides" src="fa.PNG" style="width:100%">
+<img class="mySlides" src="fo.PNG" style="width:100%">
+</div></center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<img src="fas.jpg" style="float: left; width: 32%; margin-left: 1%; margin-top: 35px;" >
+<img src="foo.jpg" style="float: left; width: 32%; margin-left: 1%; margin-top: 70px;" >
+<img src="tra.jpg" style="float: left; width: 32%; margin-left: 1%; margin-top: 35px;" >
+</body>
+</html>
